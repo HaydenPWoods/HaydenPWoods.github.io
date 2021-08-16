@@ -1,34 +1,70 @@
 ---
 layout: post
 title:  "Radio Stream to Spotify"
-date:   2021-05-08 19:00:45 +0100
+date:   2021-08-16 20:51:00 +0100
 categories: projects
-cover_image: "/assets/images/pmwa-1.png"
+cover_image: "/assets/images/radio-stream-to-spotify-cover.png"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+Radio stations tend to be good at collating a playlist for a specific genre or target audience. Monitoring these radio
+stations tends to create very listenable playlists.
 
-Jekyll requires blog post files to be named according to the following format:
+<a class="btn btn-primary" href="https://github.com/HaydenPWoods/radio-stream-to-spotify">Visit GitHub Repo 🔗</a>
 
-`YEAR-MONTH-DAY-title.MARKUP`
+"Radio Stream to Spotify" is an application designed to monitor the metadata of many different radio streams, find the
+currently playing song on Spotify, and then add it to a specific playlist created for that station.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+The application has been written in Python 3, and utilises the [Tekore](https://pypi.org/project/tekore/) library for 
+interfacing with the Spotify Web API. It is able to run indefinitely, and uses little resources.
 
-<p style="text-align: center">
+I created this mainly to fulfill a personal need - I noticed that another Spotify user ([lerman01](https://open.spotify.com/user/lerman01?si=341773f6c14744f5))
+had attempted a similar idea for Virgin Radio UK, and I wanted to extend it to more radio stations. I like the playlists
+on Radio X and Kiss, but I don't always feel like listening to the DJs (and the adverts..!) 
 
-<img src="/assets/images/pmwa-1.png" class="post-image" alt="Cover Image">
-</p>
-Jekyll also offers powerful support for code snippets:
+I have the program running on a Raspberry Pi, monitoring a number of different UK radio stations and pushing the songs
+to public Spotify playlists. Many people must find these useful - my most popular playlist by far is Radio X with 700+
+followers.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+<iframe src="https://open.spotify.com/embed/playlist/1hy8UACNKGHQq6nyCHXZZN" width="100%" height="450" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Current radio stations being monitored include:
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<table class="table">
+<tr>
+<td>Absolute Radio</td>
+<td>Absolute Radio 00s</td>
+<td>Absolute Radio 10s</td>
+</tr>
+<tr>
+<td>"Begins with a C"</td>
+<td>Gold</td>
+<td>Greatest Hits Radio</td>
+</tr>
+<tr>
+<td>Heart</td>
+<td>Hits Radio</td>
+<td>Jazz FM</td>
+</tr>
+<tr>
+<td>Kiss</td>
+<td>Kisstory</td>
+<td>Kiss Fresh</td>
+</tr>
+<tr>
+<td>Magic</td>
+<td>Planet Rock</td>
+<td>Radio X</td>
+</tr>
+<tr>
+<td>Smooth Radio</td>
+<td>Union JACK Dance</td>
+<td>Union JACK Radio</td>
+</tr>
+<tr>
+<td>Virgin Radio Anthems</td>
+<td>Virgin Radio Chilled</td>
+<td>Virgin Radio Groove</td>
+</tr>
+<tr>
+<td>Virgin Radio UK</td>
+</tr>
+</table>
