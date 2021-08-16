@@ -1,0 +1,48 @@
+/* Overriding Bootstrap styles (and applying any custom ones) */
+
+html {
+    scroll-padding-top: 56px;
+}
+
+#hero {
+    background-image: url("/assets/images/cromer_header_default.JPG"), radial-gradient(circle, rgba(207,199,178,1) 0%, rgba(182,213,242,1) 20%, rgba(89,145,170,1) 100%);
+    background-position: right center;
+    background-size: 110%;
+    border-radius: 15px;
+}
+
+.text-outline-white {
+    /*background: rgba(121, 121, 121, 0.5);*/
+    color: white;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-footer:last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.post-list {
+    list-style-type: none;
+}
+
+.post-link {
+    color: #212529;
+    text-decoration-line: none;
+}
+
+.post-link:hover {
+    color: rgba(33, 37, 41, 0.9);
+}
+
+.post-image {
+    width: 50%;
+}

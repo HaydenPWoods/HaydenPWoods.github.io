@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="container" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="row justify-content-center">
+        <header class="col">
+            <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+            <p>
+                {{ page.date | date_to_long_string }}
+            </p>
+        </header>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-auto" itemprop="articleBody">
+            {{ content }}
+        </div>
+    </div>
+</article>

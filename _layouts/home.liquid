@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+{% include hero.liquid %}
+
+{{ content }}
+
+{% if site.categories.projects.size > 0 %}
+    <div class="container pb-2 pt-4" id="projects">
+        <div class="row">
+            <div class="col">
+                <h2>Projects {{ site.categories.posts.count }}</h2>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            {% for post in site.categories.projects %}
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="{{ post.cover_image | relative_url }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">{{ post.title | escape }}</h5>
+                            <p class="card-text">{{ post.excerpt }}</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a class="btn btn-primary" href="{{ post.url | relative_url }}">
+                                View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}
+
+{% if site.posts.size > 0 %}
+    <div class="container pt-2 pb-2" id="posts">
+        <div class="row">
+            <div class="col">
+                <h2>Posts</h2>
+            </div>
+        </div>
+        <div class="post-list">
+            {% for post in site.posts %}
+                <li>
+                    <span class="post-meta">{{ post.date | date_to_long_string }}</span>
+                    <h3>
+                        <a class="post-link" href="{{ post.url | relative_url }}">
+                            {{ post.title | escape }}
+                        </a>
+                    </h3>
+                        {{ post.excerpt }}
+                </li>
+            {% endfor %}
+        </div>
+
+
+    </div>
+{% endif %}
