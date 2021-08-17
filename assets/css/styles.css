@@ -46,3 +46,7 @@ html {
 .post-image {
     width: 50%;
 }
+
+.border-radius-15 {
+    border-radius: 15px;
+}
