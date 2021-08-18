@@ -1,30 +1,22 @@
 ---
 layout: post
 title:  "This Site"
-date:   2021-05-08 19:00:45 +0100
+date:   2021-08-15 10:49:00 +0100
 categories: projects
-cover_image: "/assets/images/pmwa-1.png"
+cover_image: "/assets/images/this-site-cover.png"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+A custom Bootstrap design, built with Jekyll and hosted on GitHub Pages.
 
-Jekyll requires blog post files to be named according to the following format:
+I wanted a simple personal site that I could use to showcase projects and occasional posts. GitHub Pages fills this
+remit perfectly:
 
-`YEAR-MONTH-DAY-title.MARKUP`
+* It supports Jekyll, allowing for a static site to be generated from templates and regenerated on any changes. Posts
+  and pages can be added with simple Markdown files, instead of writing the entire HTML markup each time.
+* It supports a nice and short custom domain.
+* It's really fast and responsive - partly due to the servers being fast, but as a static site, there's no processing
+  each time a page is requested.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+It's my first time using the [Liquid template language](https://shopify.github.io/liquid/). I have been used to using
+the Thymeleaf template language with Spring (Java), and there are significant differences between the two (e.g. Liquid 
+uses curly brace syntax on the page, while Thymeleaf mostly uses element attributes.) Yet, it has been easy to learn 
+quickly, and seems very flexible.
