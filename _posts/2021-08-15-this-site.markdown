@@ -7,6 +7,8 @@ cover_image: "/assets/images/this-site-cover.png"
 ---
 A custom Bootstrap design, built with Jekyll and hosted on GitHub Pages.
 
+<a class="btn btn-primary" href="https://github.com/HaydenPWoods/HaydenPWoods.github.io">Visit GitHub Repo 🔗</a>
+
 I wanted a simple personal site that I could use to showcase projects and occasional posts. GitHub Pages fills this
 remit perfectly:
 
