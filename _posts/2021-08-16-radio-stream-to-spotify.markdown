@@ -6,7 +6,7 @@ categories: projects
 cover_image: "/assets/images/radio-stream-to-spotify-cover.png"
 ---
 Radio stations tend to be good at collating a playlist for a specific genre or target audience. Monitoring these radio
-stations tends to create very listenable playlists.
+stations creates very listenable playlists.
 
 <a class="btn btn-primary" href="https://github.com/HaydenPWoods/radio-stream-to-spotify">Visit GitHub Repo 🔗</a>
 
