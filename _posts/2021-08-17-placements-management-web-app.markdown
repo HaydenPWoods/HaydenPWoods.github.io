@@ -126,7 +126,7 @@ were developed, which included:
 * Statistics and Export Creation
 * Graduate Records
 
-Data is stored in a MySQL database. Various APIs and services are utilised to achieve the full feature set. This
+Data is stored in a MySQL database. Various APIs, services, and libraries are utilised to achieve the full feature set. This
 includes:
 
 * Google Maps API - for geocoding addresses of providers and showing these on maps, and for working out the distance
@@ -136,3 +136,7 @@ includes:
   worker.
 * Bootstrap 4 - for a fully responsive design. Where appropriate, a two-column layout is used on desktop, collapsing
   down to one column for smaller screen widths.
+* jQuery - for dynamic page content. Used for sending AJAX calls to the server to allow for immediate field
+  validation (for example, when checking if a username or email has been taken by another user of the application). Also
+  used for generating page elements without requiring a reload (for example, when a user selects files for upload,
+  generating form fields to add a description for each of these files.)
